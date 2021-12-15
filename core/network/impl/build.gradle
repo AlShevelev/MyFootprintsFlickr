@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion sdk.compile
+    defaultConfig {
+        minSdkVersion sdk.min
+        targetSdkVersion sdk.compile
+    }
+    buildFeatures {
+        compose true
+        viewBinding false
+        buildConfig false
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion versions.compose
+        kotlinCompilerVersion versions.kotlin
+    }
+
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+            testLogging.events = ["passed", "skipped", "failed"]
+        }
+    }
+}
+
+dependencies {
+}

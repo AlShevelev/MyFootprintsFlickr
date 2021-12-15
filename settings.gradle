@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MyFootprintsFlickr"
 include ':app'
+include ':core:network:api'
+include ':core:network:impl'

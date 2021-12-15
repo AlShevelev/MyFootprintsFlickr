@@ -1,0 +1,26 @@
+ext.app = [
+    code: 1,
+    name: "1.0"
+]
+
+ext.sdk = [
+    min: 21,
+    compile: 31
+]
+
+ext.build = [
+    gradle: "7.0.4"
+]
+
+ext.versions = [
+    // Kotlin
+    kotlin: "1.5.31",
+    core_ktx: "1.7.0",
+
+    // Android
+    compose: "1.0.5",
+    activity_compose: "1.4.0",
+    appcompat: "1.4.0",
+    material: "1.4.0",
+    lifecycle: "2.4.0"
+]
