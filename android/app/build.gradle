@@ -45,6 +45,9 @@ android {
 }
 
 dependencies {
+    implementation project (':android:shared:logger')
+    implementation project (':non-platform:shared:logger')
+
     implementation deps.ktx.values()
     implementation deps.android.values()
     implementation deps.compose.values()

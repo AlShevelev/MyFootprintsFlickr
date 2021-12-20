@@ -10,3 +10,5 @@ rootProject.name = "MyFootprintsFlickr"
 include ':android:app'
 include ':non-platform:shared:network:api'
 include ':non-platform:shared:network:impl'
+include ':non-platform:shared:logger'
+include ':android:shared:logger'
